@@ -8,6 +8,7 @@ header{
     height: 70vh;
     background-color: blue;
 }
+
 body, main{
     width: 100vw;
     height: 100vh;
@@ -23,7 +24,7 @@ body, main{
         border-radius: 7px;
         text-align: center;
     }
-    & img{
+    & .logo{
         width: 250px;
         height: 100px;
     }
@@ -68,12 +69,13 @@ body, main{
         box-shadow: 5px 5px 10px black;
     }
 }
+
 #page3{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px 20px;
-    height: 65rem;
+    height: 66rem;
     background-color: red;
     border-radius: 7px;
     text-align: center;
@@ -106,5 +108,43 @@ body, main{
         border-radius: 7px;
         box-shadow: 5px 5px 10px black;
     }
+}
+
+footer{
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+
+    & .logo{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        justify-self: center;
+    }
+
+    & .info{
+        margin-top: 40px;
+        padding-left: 40px;
+        align-self: flex-start;
+        color: white;
+
+        & h1{
+            font-size: 1.5em;
+        }
+
+        & ul{
+            list-style: none;
+            margin-top: 5%;
+            
+
+            & li{
+                font-size: 1.2em;
+                padding: 10px 0px;
+            }
+        }
+
+    }
+
 }
 
