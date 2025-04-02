@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <div class="typing-container" id="typing"></div>
 
     </header>
     <main>
@@ -15,7 +16,7 @@
             <h1>Sobra o Insituto</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis ipsam dolorum incidunt eveniet voluptas quae! Rerum nesciunt id explicabo veniam! Qui tempore assumenda veritatis quaerat ullam molestias consectetur ad odio!</p>
 
-            <img class="logo" src="" alt="">
+            <img class="logo" src="imagens/logo_trans.png" alt="">
 
         </section>
 
@@ -46,9 +47,8 @@
 
         <section id="page3">
 
-            <img id="imgTop" src="" alt="">
+            <div class="impactos" id="typing"></div>
 
-            <h1>O que fazemos</h1>
 
             <div class="parte2">
                 <img src="" alt="">
@@ -66,6 +66,16 @@
 
         <footer>
             <img class="logo" src="" alt="">
+            <div class="info">
+
+            <h1>Contato</h1>
+                <ul>
+                    <li>email</li>
+                    <li>endereço</li>
+                    <li>cnpj</li>
+                </ul>
+
+            </div>
             <div class="info">
 
             <h1>Links Rápidos</h1>
@@ -94,4 +104,36 @@
     
     
 </body>
+
+<script>
+    const phrases = ["IME", "Insituto Minha Esperança"];
+    let currentPhrase = 0;
+    let currentChar = 0;
+    let typingElement = document.getElementById('typing');
+
+    function type() {
+        if (currentChar < phrases[currentPhrase].length) {
+            typingElement.innerHTML += phrases[currentPhrase].charAt(currentChar);
+            currentChar++;
+            setTimeout(type, 20); // Ajuste o tempo entre as letras aqui
+        } else {
+            setTimeout(() => {
+                deleteText();
+            }, 2000); // Tempo de espera antes de apagar o texto
+        }
+    }
+
+    function deleteText() {
+        if (currentChar > 0) {
+            typingElement.innerHTML = phrases[currentPhrase].substring(0, currentChar - 1);
+            currentChar--;
+            setTimeout(deleteText, 30); // Ajuste o tempo para apagar as letras
+        } else {
+            currentPhrase = (currentPhrase + 1) % phrases.length; // Muda para a próxima frase
+            setTimeout(type, 500); // Tempo de espera antes de começar a digitar novamente
+        }
+    }
+
+    type(); // Inicia a animação
+</script>
 </html>

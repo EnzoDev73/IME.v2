@@ -7,6 +7,19 @@ header{
     width: 100vw;
     height: 70vh;
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.typing-container {
+    font-family: monospace;
+    font-size: 24px;
+    border-right: 3px solid black; /* Efeito do cursor */
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 body, main{
@@ -19,14 +32,29 @@ body, main{
         flex-direction: column;
         align-items: center;
         margin: 20px 20px;
-        height: 30rem;
-        background-color: red;
+        height: 25rem;
+        background-color: white;
+        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
         border-radius: 7px;
         text-align: center;
+
+        & h1{
+            margin-top: 20px;
+        }
+        & p {
+            font-size: 1.2em;
+            margin-top: 20px;
+            padding: 0px 25px;
+            text-align: justify;
+        }
     }
+
     & .logo{
         width: 250px;
-        height: 100px;
+        height: auto;
+        margin-top: 15%;
+        position: relative;
+        right: 5%;
     }
 }
 
@@ -40,7 +68,7 @@ body, main{
     align-items: center;
     margin: 20px 20px;
     height: 60rem;
-    background-color: red;
+    background-color: white;
     border-radius: 7px;
     text-align: center;
 
@@ -60,13 +88,13 @@ body, main{
     }
 
     & .parte{
-        width: 20rem;
+        width: 80%;
         height: 15rem;
-        background-color: white;
+        background-color: lightblue;
         margin-top: 40px;
         padding-top: 10px;
         border-radius: 7px;
-        box-shadow: 5px 5px 10px black;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -76,7 +104,7 @@ body, main{
     align-items: center;
     margin: 20px 20px;
     height: 66rem;
-    background-color: red;
+    background-color: white;
     border-radius: 7px;
     text-align: center;
 
@@ -100,13 +128,24 @@ body, main{
     }
 
     & .parte2{
-        width: 20rem;
+        width: 80%;
         height: 25rem;
-        background-color: white;
+        background-color: lightblue;
         margin-top: 40px;
         padding-top: 10px;
         border-radius: 7px;
-        box-shadow: 5px 5px 10px black;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    & .impactos{
+        font-family: monospace;
+        font-size: 24px;
+        border-right: 3px solid black; /* Efeito do cursor */
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        background-color: red;
+        height: 10%;
     }
 }
 
@@ -124,7 +163,7 @@ footer{
     }
 
     & .info{
-        margin-top: 40px;
+        margin-top: 5%;
         padding-left: 40px;
         align-self: flex-start;
         color: white;
@@ -140,11 +179,15 @@ footer{
 
             & li{
                 font-size: 1.2em;
-                padding: 10px 0px;
+                padding: 5px 0px;
             }
         }
+
 
     }
 
 }
+
+
+
 
