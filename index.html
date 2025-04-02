@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="typing-container" id="typing"></div>
+        <div class="typing-container" id="typing1"></div>
 
     </header>
     <main>
@@ -47,7 +47,10 @@
 
         <section id="page3">
 
-            <div class="impactos" id="typing"></div>
+            <div id="fundo-impactos">
+
+            <div class="impactos" id="typing2"></div>
+        </div>
 
 
             <div class="parte2">
@@ -106,34 +109,54 @@
 </body>
 
 <script>
-    const phrases = ["IME", "Insituto Minha Esperança"];
-    let currentPhrase = 0;
-    let currentChar = 0;
-    let typingElement = document.getElementById('typing');
-
-    function type() {
-        if (currentChar < phrases[currentPhrase].length) {
-            typingElement.innerHTML += phrases[currentPhrase].charAt(currentChar);
-            currentChar++;
-            setTimeout(type, 20); // Ajuste o tempo entre as letras aqui
-        } else {
-            setTimeout(() => {
-                deleteText();
-            }, 2000); // Tempo de espera antes de apagar o texto
+    const typingData = [
+        {
+            elementId: "typing1",
+            phrases: ["IME", "INSTITUTO MINHA ESPERANÇA"],
+        },
+        {
+            elementId: "typing2",
+            phrases: ["Nossos Projetos"],
         }
+    ];
+
+    function startTypingAnimation(elementId, phrases) {
+        let currentPhraseIndex = 0;
+        let currentCharIndex = 0;
+        let isDeleting = false;
+        const typingElement = document.getElementById(elementId);
+
+        function typeEffect() {
+            const currentPhrase = phrases[currentPhraseIndex];
+            if (!isDeleting) {
+                typingElement.textContent = currentPhrase.substring(0, currentCharIndex + 1);
+                currentCharIndex++;
+
+                if (currentCharIndex === currentPhrase.length) {
+                    isDeleting = true;
+                    setTimeout(typeEffect, 1500);
+                    return;
+                }
+            } else {
+                typingElement.textContent = currentPhrase.substring(0, currentCharIndex - 1);
+                currentCharIndex--;
+
+                if (currentCharIndex === 0) {
+                    isDeleting = false;
+                    currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+                }
+            }
+            setTimeout(typeEffect, isDeleting ? 50 : 100);
+        }
+
+        typeEffect();
     }
 
-    function deleteText() {
-        if (currentChar > 0) {
-            typingElement.innerHTML = phrases[currentPhrase].substring(0, currentChar - 1);
-            currentChar--;
-            setTimeout(deleteText, 30); // Ajuste o tempo para apagar as letras
-        } else {
-            currentPhrase = (currentPhrase + 1) % phrases.length; // Muda para a próxima frase
-            setTimeout(type, 500); // Tempo de espera antes de começar a digitar novamente
-        }
-    }
-
-    type(); // Inicia a animação
+    document.addEventListener("DOMContentLoaded", () => {
+        typingData.forEach(({ elementId, phrases }) => {
+            startTypingAnimation(elementId, phrases);
+        });
+    });
 </script>
+
 </html>
