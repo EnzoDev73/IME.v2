@@ -146,7 +146,7 @@
 
                 if (currentCharIndex === currentPhrase.length) {
                     isDeleting = true;
-                    setTimeout(typeEffect, 1500);
+                    setTimeout(typeEffect, 1100);
                     return;
                 }
             } else {
@@ -158,7 +158,7 @@
                     currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
                 }
             }
-            setTimeout(typeEffect, isDeleting ? 50 : 100);
+            setTimeout(typeEffect, isDeleting ? 30 : 50);
         }
 
         typeEffect();
