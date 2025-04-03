@@ -23,6 +23,8 @@ header{
     height: 70vh;
     background-image: url("../imagens/acao1.jpg");
     background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
