@@ -8,6 +8,16 @@
     padding: 0px;
 }
 
+#logo1{
+        width: 120px;
+        height: auto;
+        position: relative;
+        bottom: 35%;
+        align-self: flex-start;
+        padding-left: 20px;
+    }
+
+
 header{
     width: 100vw;
     height: 70vh;
