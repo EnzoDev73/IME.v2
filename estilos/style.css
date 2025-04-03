@@ -35,7 +35,7 @@ header{
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bolder;
         font-size: 1.2em;
-        color: rgb(71, 220, 94);
+        color: rgb(67, 129, 244);
     }
     
 }
@@ -83,7 +83,7 @@ body, main{
     }
 
     & .logo{
-        width: 250px;
+        width: 190px;
         height: auto;
         margin-top: 15%;
         position: relative;
@@ -106,20 +106,21 @@ body, main{
     text-align: center;
 
     & img{
-        width: 50px;
-        height: 50px;
-        margin-top: 5px;
+        width: 65px;
+        height: auto;
+        margin-top: 15px;
     }
 
     & h1{
         font-family: Roboto;
-        margin-top: 20px;
+        margin-top: 35px;
     }
 
     & h2{
         font-family: Poppins;
         font-size: 1em;
         font-weight: 700;
+        margin-top: 15px;
     }
 
     & p{
@@ -127,14 +128,14 @@ body, main{
         margin-top: 15px;
         color: rgba(0, 0, 0, 0.625);
         padding: 0px 30px;
-        text-align: justify;
+        text-align: center;
     }
 
     & .parte{
         width: 80%;
         height: 15rem;
         background-color: lightblue;
-        margin-top: 40px;
+        margin-top: 30px;
         padding-top: 10px;
         border-radius: 7px;
         box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
@@ -146,7 +147,7 @@ body, main{
     flex-direction: column;
     align-items: center;
     margin: 20px 20px;
-    height: 66rem;
+    height: 70rem;
     background-color: white;
     border-radius: 7px;
     text-align: center;
@@ -173,9 +174,9 @@ body, main{
 
     & .parte2{
         width: 80%;
-        height: 25rem;
+        height: 18rem;
         background-color: lightblue;
-        margin-top: 40px;
+        margin-top: 35px;
         padding-top: 10px;
         border-radius: 7px;
         box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
@@ -193,8 +194,8 @@ body, main{
         border-radius: 7px 7px 0px 0px;
 
         & .impactos{
-            font-family: monospace;
-            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
             color: white;
             border-right: 3px solid white; /* Efeito do cursor */
             display: inline-block;
