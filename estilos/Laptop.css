@@ -2,49 +2,31 @@
 
 @media (min-width: 821px) and (max-width: 1080px) {
 
-    #logo1{
-        width: 140px;
-        padding: 40px;
+    .menu-btn{
+        display: none;
     }
 
     nav{
-        width: 350px;
-        font-size: 1.2em;
-        padding-top: 130px;
-
-        & #logo_menu{
-            width: 150px;
+        display: block;
+        position: absolute;
+        background-color: #222;
+        width: 200px;
+        height: 100%;
+        
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 1000;
         }
-    }
-    
-    .menu-btn{
-        padding: 15px 25px;
-        font-size: 1.2em;
-        border-radius: 30px;
-        top: 40px;
-        right: 40px;
-    }
-
-    header{
-        & h2{
-            font-size: 1.4em;
-        }
-    }
-
-    .typing-container {
-        height: 45px;
-        font-size: 40px;
-    }
 
     main {
 
     & #page1{
         flex-direction: row;
-        margin: 20px 10%;
+        margin: 20px 5%;
 
         & h1{
             padding-left: 50px;
-            padding-bottom: 20%;
+            padding-bottom: 23%;
             position: absolute;
             
 
@@ -64,14 +46,62 @@
     }
 
     & #page2{
-        margin: 20px 10%;
+        height: 70vh;
+        flex-direction: row;
+        margin: 20px 5%;
+        justify-content: space-evenly;
+        
+
+        & h1{
+            padding-bottom: 38%;
+            position: absolute;
+            
+
+        }
+
+        & .parte{
+            width: 30%;
+            height: 15rem;
+        }
     }
     & #page3{
-        margin: 20px 10%;
+        height: 92vh;
+        flex-direction: row;
+        margin: 20px 5%;
+        justify-content: space-evenly;
+       
+        & #fundo-impactos{
+            height: 100px;
+            width: 90%;
+            position: absolute;
+            align-self: flex-start;
+            background-position: bottom;
+        }
+
+        & .parte2{
+            width: 30%;
+            height: 25rem;
+            margin-top: 10%;
+        }
+
+        & img{
+            width: 12rem;
+        }
     }
 
+
     footer{
+        flex-direction: row;
+        align-items: center;
         padding-left: 8%;
+        gap: 12%;
+        height: 80vh;
+
+        & #logo2{
+            position: absolute;
+            margin-bottom: 40%;
+        }
+
     }
     
 }

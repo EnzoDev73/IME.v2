@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IME</title>
+    <title>Instituto Minha Esperança</title>
+    <link rel="shortcut icon" href="imagens/icone.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/tablet.css">
     <link rel="stylesheet" href="estilos/Laptop.css">
+    <link rel="stylesheet" href="estilos/desktop.css">
 </head>
 <body>
     <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
@@ -71,7 +73,7 @@
             <div id="fundo-impactos">
 
             <div class="impactos" id="typing2"></div>
-        </div>
+            </div>
 
 
             <div class="parte2">
@@ -116,12 +118,13 @@
                 </ul>
 
             </div>
-            <div class="info">
+            <div class="info" id="info_horarios">
 
             <h1>Horários de atendimento</h1>
                 <ul>
-                    <li>Segunda à Sexta</li>
-                    <li>Sábado</li>
+                    <li>Segunda à Sexta: 9h às 12h
+                    </li>
+                    <li>Sábado: 9h às 12h</li>
 
                 </ul>
 
@@ -194,6 +197,22 @@
       menu.classList.toggle("active");
       content.classList.toggle("blur");
 
+    }
+
+    function adjustMenu() {
+        const menu = document.getElementById("menu");
+        const menuButton = document.getElementById("menu-btn");
+
+        if (window.innerWidth >= 821) {
+            menu.classList.add("active");
+            menuButton.style.display = "none";
+        } else {
+            menu.classList.remove("active");
+            menuButton.style.display = "block";
+        }
+
+        window.addEventListener("resize", adjustMenu);
+        window.addEventListener("DOMContentLoaded", adjustMenu)
     }
   </script>
 
