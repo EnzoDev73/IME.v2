@@ -12,7 +12,9 @@ html{
     scroll-behavior: smooth;
 }
 
-
+#menu2{
+    display: none;
+}
 
 #logo1{
         width: 120px;

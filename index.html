@@ -21,10 +21,18 @@
             <a href="imagens/Transparencia TF 96466_MINHA ESPERANCA_MM_10_03 (1).pdf" onclick="toggleMenu()" target="_blank">Transparência</a>
             <img id="logo_menu" src="imagens/logo_branca.png" alt="">
           </nav>
+        
     
           <div class="main-content" id="content">
     <header>
-        
+        <div id="menu2">
+            <a href="#page1">SOBRE</a>
+            <a href="#page2">O QUE FAZEMOS? </a>
+            <a href="#page3">PROJETOS</a>
+            <a href="#page4">CONTATO</a>
+            <a href="imagens/Transparencia TF 96466_MINHA ESPERANCA_MM_10_03 (1).pdf"  target="_blank">TRANSPARÊNCIA</a>
+        </div>
+
         <img id="logo1" src="imagens/logo_branca.png" alt="">
         <div id="conteudo">
         <div class="typing-container" id="typing1"></div>
@@ -199,21 +207,6 @@
 
     }
 
-    function adjustMenu() {
-        const menu = document.getElementById("menu");
-        const menuButton = document.getElementById("menu-btn");
-
-        if (window.innerWidth >= 821) {
-            menu.classList.add("active");
-            menuButton.style.display = "none";
-        } else {
-            menu.classList.remove("active");
-            menuButton.style.display = "block";
-        }
-
-        window.addEventListener("resize", adjustMenu);
-        window.addEventListener("DOMContentLoaded", adjustMenu)
-    }
   </script>
 
 </html>
