@@ -237,6 +237,16 @@ footer{
                 font-size: 1em;
                 padding: 5px 0px;
             }
+
+            & a{
+                text-decoration: none;
+                color: white;
+            }
+
+            & a:hover{
+                color: rgb(67, 129, 244);
+            
+            }
         }
 
 
