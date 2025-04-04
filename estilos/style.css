@@ -147,7 +147,7 @@ body, main{
     flex-direction: column;
     align-items: center;
     margin: 20px 20px;
-    height: 83rem;
+    height: 86rem;
     background-color: white;
     border-radius: 7px;
     text-align: center;
@@ -172,7 +172,7 @@ body, main{
 
     & .parte2{
         width: 80%;
-        height: 22rem;
+        height: 23rem;
         background-color: lightblue;
         margin-top: 35px;
         padding-top: 10px;
