@@ -147,15 +147,14 @@ body, main{
     flex-direction: column;
     align-items: center;
     margin: 20px 20px;
-    height: 70rem;
+    height: 83rem;
     background-color: white;
     border-radius: 7px;
     text-align: center;
 
     & img{
-        width: 50px;
-        height: 50px;
-        margin-top: 5px;
+        width: 17rem;
+        height: auto;
     }
 
     & #imgTop{
@@ -166,7 +165,6 @@ body, main{
         margin-top: 20px;
     }
     & p{
-        margin-top: 15px;
         padding: 0px 30px;
         text-align: justify;
         color: rgba(0, 0, 0, 0.625);
@@ -174,7 +172,7 @@ body, main{
 
     & .parte2{
         width: 80%;
-        height: 18rem;
+        height: 22rem;
         background-color: lightblue;
         margin-top: 35px;
         padding-top: 10px;
@@ -215,10 +213,11 @@ footer{
     flex-direction: column;
     align-items: center;
 
-    & .logo{
-        margin-top: 40px;
-        margin-bottom: 20px;
-        justify-self: center;
+    & #logo2{
+        width: 150px;
+        height: auto;
+        align-self: flex-start;
+        padding: 20px;
     }
 
     & .info{
