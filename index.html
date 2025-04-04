@@ -7,25 +7,38 @@
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
 
+        <nav id="menu">
+            <a href="#page1" onclick="toggleMenu()">Sobre</a>
+            <a href="#page2" onclick="toggleMenu()">O que fazemos? </a>
+            <a href="#page3" onclick="toggleMenu()">Projetos</a>
+            <a href="#page4" onclick="toggleMenu()">Contato</a>
+            <img id="logo_menu" src="imagens/logo_branca.png" alt="">
+          </nav>
+    <div class="main-content" id="content">
     <header>
+        
         <img id="logo1" src="imagens/logo_branca.png" alt="">
+        <div id="conteudo">
         <div class="typing-container" id="typing1"></div>
         <h2>Servindo a Sociedade</h2>
+        
+
 
     </header>
     <main>
+        
         <section id="page1">
-            <h1>Sobra o IME</h1>
-            <p>O Instituto Minha Esperança é uma entidade sem fins lucrativos que vem atuando desde a sua fundação em 2008, na promoção de ações visando promover a cidadania, autonomia economica, saúde, esporte e lazer. visando o desenvolvimento das pessoas da comunidade no entorno da sua sede no bairro da sacramenta e marituba</p>
+            <h1>Sobre o IME</h1>
+            <p>O Instituto Minha Esperança é uma entidade sem fins lucrativos que vem atuando, desde a sua fundação em 2008, na promoção de ações, visando promover a cidadania, autonomia econômica, saúde, esporte e lazer, visando o desenvolvimento das pessoas da comunidade no entorno da sua sede, no bairro da Sacramenta e Marituba.</p>
 
             <img class="logo" src="imagens/logo_trans.png" alt="">
 
         </section>
 
         <section id="page2">
-            <h1>O que fazemos</h1>
+            <h1>O que fazemos?</h1>
 
             <div class="parte">
                 <img src="imagens/apoio-suporte.png" alt="">
@@ -79,7 +92,7 @@
 
         </section>
 
-        <footer>
+        <footer id="page4">
             <img id="logo2" src="imagens/logo_branca.png" alt="">
             <div class="info">
 
@@ -92,9 +105,9 @@
 
                 <h1>Links Rápidos</h1>
                 <ul>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">O que Fazemos</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#page1">Sobre Nós</a></li>
+                    <li><a href="#page2">O que Fazemos</a></li>
+                    <li><a href="#page3">Projetos</a></li>
                     <li><a href="#">Transparência</a></li>
                 </ul>
 
@@ -111,8 +124,9 @@
             </div>
         
         </footer>
-
+    </div>
     </main>
+
     
     
 </body>
@@ -167,5 +181,16 @@
         });
     });
 </script>
+
+<script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      const content = document.getElementById("content");
+
+      menu.classList.toggle("active");
+      content.classList.toggle("blur");
+
+    }
+  </script>
 
 </html>
