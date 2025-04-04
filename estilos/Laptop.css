@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+@media (min-width: 821px) and (max-width: 1080px) {
+
+    #logo1{
+        width: 140px;
+        padding: 40px;
+    }
+
+    nav{
+        width: 350px;
+        font-size: 1.2em;
+        padding-top: 130px;
+
+        & #logo_menu{
+            width: 150px;
+        }
+    }
+    
+    .menu-btn{
+        padding: 15px 25px;
+        font-size: 1.2em;
+        border-radius: 30px;
+        top: 40px;
+        right: 40px;
+    }
+
+    header{
+        & h2{
+            font-size: 1.4em;
+        }
+    }
+
+    .typing-container {
+        height: 45px;
+        font-size: 40px;
+    }
+
+    main {
+
+    & #page1{
+        flex-direction: row;
+        margin: 20px 10%;
+
+        & h1{
+            padding-left: 50px;
+            padding-bottom: 20%;
+            position: absolute;
+            
+
+        }
+
+        & p{
+            width: 53%;
+            padding-left: 50px;
+        }
+
+        & .logo{
+            width: 220px;
+            margin-top: 0px;
+            right: 0%;
+
+        }
+    }
+
+    & #page2{
+        margin: 20px 10%;
+    }
+    & #page3{
+        margin: 20px 10%;
+    }
+
+    footer{
+        padding-left: 8%;
+    }
+    
+}
+}
