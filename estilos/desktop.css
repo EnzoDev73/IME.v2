@@ -1,39 +1,41 @@
 @charset "utf-8";
 
-@media (min-width: 1081px) and (max-width: 1366px) {
+@media (min-width: 1081px) and (max-width: 1980px) {
+
+    .menu-btn{
+        display: none;
+    }
+
+    #menu2{
+        display: flex;
+        width: 67%;
+        justify-content: end;
+        gap: 20px;
+        padding-top: 45px;
+        padding-right: 35px;
+        position: absolute;
+        left: 100%;
+        transform: translate(-100%);
+
+        & a{
+            font-size: 1em;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        & a:hover{
+            color: rgb(67, 129, 244);
+            background-color: white;
+            padding: 7px 10px;
+            border-radius: 5px;
+        }
+
+        
+    }
 
     #logo1{
-        width: 140px;
-        padding: 40px;
-    }
-
-    nav{
-        width: 350px;
-        font-size: 1.2em;
-        padding-top: 130px;
-
-        & #logo_menu{
-            width: 150px;
-        }
-    }
-    
-    .menu-btn{
-        padding: 15px 25px;
-        font-size: 1.2em;
-        border-radius: 30px;
-        top: 40px;
-        right: 40px;
-    }
-
-    header{
-        & h2{
-            font-size: 1.4em;
-        }
-    }
-
-    .typing-container {
-        height: 45px;
-        font-size: 40px;
+        padding: 30px;
     }
 
     main {
@@ -43,35 +45,82 @@
         margin: 20px 10%;
 
         & h1{
-            padding-left: 50px;
-            padding-bottom: 20%;
+            padding-left: 90px;
+            padding-bottom: 18%;
             position: absolute;
             
 
         }
 
         & p{
-            width: 53%;
-            padding-left: 50px;
+            width: 48%;
+            padding-left: 88px;
         }
 
         & .logo{
-            width: 220px;
+            width: 260px;
             margin-top: 0px;
-            right: 0%;
+            left: 4%;
 
         }
     }
 
     & #page2{
+        height: 70vh;
+        flex-direction: row;
         margin: 20px 10%;
+        justify-content: space-evenly;
+        
+
+        & h1{
+            padding-bottom: 29%;
+            position: absolute;
+            
+
+        }
+
+        & .parte{
+            width: 30%;
+            height: 15rem;
+        }
     }
     & #page3{
+        height: 75vh;
+        flex-direction: row;
         margin: 20px 10%;
+        justify-content: space-evenly;
+       
+        & #fundo-impactos{
+            height: 100px;
+            width: 80%;
+            position: absolute;
+            align-self: flex-start;
+            background-position: bottom;
+        }
+
+        & .parte2{
+            width: 30%;
+            height: 20rem;
+        }
+
+        & img{
+            width: 12rem;
+        }
     }
 
+
     footer{
+        flex-direction: row;
+        align-items: center;
         padding-left: 8%;
+        gap: 12%;
+        height: 80vh;
+
+        & #logo2{
+            position: absolute;
+            margin-bottom: 40%;
+        }
+
     }
     
 }

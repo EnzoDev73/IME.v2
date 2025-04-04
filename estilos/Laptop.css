@@ -21,6 +21,7 @@
             font-size: 0.8em;
             text-decoration: none;
             color: white;
+            font-weight: bold;
         }
 
         & a:hover{
@@ -29,6 +30,8 @@
             padding: 7px 10px;
             border-radius: 5px;
         }
+
+        
     }
     main {
 
