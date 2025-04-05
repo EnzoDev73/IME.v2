@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media (min-width: 1081px) and (max-width: 1366px) {
+@media (min-width: 1367px) and (max-width: 1920px) {
 
     .menu-btn{
         display: none;
@@ -92,7 +92,7 @@
        
         & #fundo-impactos{
             height: 100px;
-            width: 80%;
+            width: 80.8%;
             position: absolute;
             align-self: flex-start;
             background-position: bottom;
@@ -118,7 +118,7 @@
 
         & #logo2{
             position: absolute;
-            margin-bottom: 40%;
+            margin-bottom: 32%;
         }
 
     }
