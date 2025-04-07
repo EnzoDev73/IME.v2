@@ -93,7 +93,7 @@
        
         & #fundo-impactos{
             height: 100px;
-            width: 81%;
+            width: 80vw;
             position: absolute;
             align-self: flex-start;
             background-position: bottom;
