@@ -43,7 +43,7 @@
 
     & #page1{
         flex-direction: row;
-        margin: 20px 10%;
+        margin: 20px 15%;
 
         & h1{
             padding-left: 90px;
@@ -61,7 +61,7 @@
         & .logo{
             width: 260px;
             margin-top: 0px;
-            left: 4%;
+            left: 7%;
 
         }
     }
@@ -69,12 +69,12 @@
     & #page2{
         height: 70vh;
         flex-direction: row;
-        margin: 20px 10%;
+        margin: 20px 15%;
         justify-content: space-evenly;
         
 
         & h1{
-            padding-bottom: 22%;
+            padding-bottom: 25%;
             position: absolute;
             
 
@@ -88,12 +88,12 @@
     & #page3{
         height: 75vh;
         flex-direction: row;
-        margin: 20px 10%;
+        margin: 20px 15%;
         justify-content: space-evenly;
        
         & #fundo-impactos{
             height: 100px;
-            width: 80vw;
+            width: 70vw;
             position: absolute;
             align-self: flex-start;
             background-position: bottom;
@@ -102,7 +102,7 @@
         & .parte2{
             width: 30%;
             height: 20rem;
-            margin-top: 5%;
+            margin-top: 8%;
         }
 
         & img{
