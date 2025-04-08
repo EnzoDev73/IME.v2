@@ -100,7 +100,8 @@
 
         & .parte2{
             width: 30%;
-            height: 20rem;
+            height: 45vh;
+            margin-top: 15vh;
         }
 
         & img{
@@ -117,8 +118,10 @@
         height: 80vh;
 
         & #logo2{
+            width: 130px;
             position: absolute;
-            margin-bottom: 40%;
+            margin-bottom: 31%;
+            
         }
 
     }
